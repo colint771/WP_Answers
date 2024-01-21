@@ -1,76 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Place Answers</title>
-    <!-- Include CSS files here -->
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workplace Answers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      margin-top: 2rem;
+    }
+    .carousel-inner {
+      display: flex;
+      width: 100%;
+    }
+    .carousel-item {
+      min-width: 100%;
+      transition: transform 0.5s ease;
+    }
+    
+  </style>
 </head>
-<body>
-    <!-- Your page content goes here -->
-     <header>
-        <div>
-            <h1 class="title">Work Place Answers</h1>
+<body class="bg-gray-100">
+<!-- Header -->
+  <div class="flex justify-between items-center bg-red-500 p-4">
+    <div class="space-x-4">
+      <a href="#" class="text-white text-sm">Home</a>
+      <a href="#" class="text-white text-sm">About us</a>
+      <a href="#" class="text-white text-sm">Government</a>
+      <a href="#" class="text-white text-sm">Community</a>
+      <a href="#" class="text-white text-sm">Contact</a>
+    </div>
+    <div>
+      <input type="search" placeholder="Search" class="p-2">
+    </div>
+  </div>
 
-        
-            <!-- Navigation Links  -->
-            <div>
-                <nav>
-                    <ul class="nav">
-                        <a href="">Home</a> 
-                        <a href="">About</a> 
-                        <a href="">Government</a> 
-                        <a href="">Community</a> 
-                        <a href="">Contact</a>  
-                    <!-- insert link to homepage in quotes -->
-                    </ul>
-                </nav>
-            </div>
+  <div class="container mx-auto mt-10">
+    <div class="flex justify-between">
+      <div class="w-1/5">
+        <!-- Placeholder for logo -->
+        <img src="https://placehold.co/200x100" alt="Placeholder image for the left-side logo">
+      </div>
 
+      <!-- Image Carousel -->
+      <div class="carousel" id="imageCarousel">
+        <div class="carousel-inner">
+          <!-- Add your images here with the correct path -->
+          <div class="carousel-item">
+            <img src="https://placehold.co/600x300" alt="Placeholder image for the carousel 1">
+          </div>
+          <div class="carousel-item">
+            <img src="https://placehold.co/600x300" alt="Placeholder image for the carousel 2">
+          </div>
+          <div class="carousel-item">
+            <img src="https://placehold.co/600x300" alt="Placeholder image for the carousel 3">
+          </div>
+          <div class="carousel-item">
+            <img src="https://placehold.co/600x300" alt="Placeholder image for the carousel 3">
+          </div>
+          <div class="carousel-item">
+            <img src="https://placehold.co/600x300" alt="Placeholder image for the carousel 3">
+          </div>
+          <div class="carousel-item">
+            <img src="https://placehold.co/600x300" alt="Placeholder image for the carousel 3">
+          </div>
+          <div class="carousel-item">
+            <img src="https://placehold.co/600x300" alt="Placeholder image for the carousel 3">
+          </div>
         </div>
-    </header>
-    <main>
-        <!-- Main content goes here -->
-    </main>
-    <footer>
-        <!-- Footer content goes here -->
-               <!-- Navigation Links  -->
-               <div>
-                <nav>
-                    <ul class="nav">
-                        <a href="">Home</a> 
-                        <a href="">About</a> 
-                        <a href="">Government</a> 
-                        <a href="">Community</a> 
-                        <a href="">Contact</a>  
-                    <!-- insert link to homepage in quotes -->
-                    </ul>
-            <!-- End of nav links  -->
-            <!-- About Summary -->
-            <div>
-               <h2>About</h2> 
-               <p>We’re all in! Our line selections provide solutions in the major vertical markets, corporate, healthcare, and education. With the manufactures in our portfolio, we can deliver furniture products that achieve a design vision and remain with in budget and time parameters. Also, custom-made furniture options are available to fit the requirements of the project. </p>
-            </div>
-            <!-- Contact - Call, Addy, Fax -->
-            <div>
-                <h5>Call</h5>
-                <p><a href="tel: +14045806716">(404) 580-6716</a> </p>
-            </div>
-            <div>
-                <h5>Address</h5>
-                <p><a href="https://www.google.com/maps/place/2135+Defoor+Hills+Rd+NW+e,+Atlanta,+GA+30318/@33.8136102,-84.4344266,17z/data=!3m1!4b1!4m6!3m5!1s0x88f5052e60e8bbcf:0xbb9abbcc45f0a59b!8m2!3d33.8136102!4d-84.4318517!16s%2Fg%2F11nsspclby?entry=ttu">2135 Defoor Hills Rd Ste E Atlanta, GA 30318 </a></p>
-            </div>
-            <div>
-                <h5>Fax</h5>
-                <p><a href="fax: +16786239002"> (678) 623-9002</a></p>
-            </div>
-            <!-- End Call, Addy, Fax -->
-            <!-- Put the 2023 WPA, LLC. and a link to linked in with linked logo as clickable link -->
+      </div>
 
-    </footer>
-    <!-- Include JavaScript files here -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <!-- Partners -->
+      <div class="w-3/5 grid grid-cols-3 gap-4">
+        <!-- Placeholder images for partner logos -->
+        <img src="https://placehold.co/200x100" alt="Placeholder image for SmartBox logo">
+        <img src="https://placehold.co/200x100" alt="Placeholder image for AIS logo">
+        <img src="https://placehold.co/200x100" alt="Placeholder image for Barbican logo">
+        <img src="https://placehold.co/200x100" alt="Placeholder image for Fomcore logo">
+        <img src="https://placehold.co/200x100" alt="Placeholder image for Modular Millwork logo">
+        <img src="https://placehold.co/200x100" alt="Placeholder image for SmartBox logo">
+      </div>
+      <div class="w-1/5">
+        <!-- Placeholder for logo -->
+        <img src="https://placehold.co/200x100" alt="Placeholder image for the right-side logo">
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto mt-10">
+    <div class="text-center">
+      <h2 class="text-4xl font-bold">Subscribe Now!</h2>
+      <div class="mt-4">
+        <input type="email" placeholder="Your email" class="p-2 border border-black">
+        <button class="bg-red-500 text-white px-4 py-2">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto mt-10">
+    <div class="flex justify-between">
+      <div class="w-1/3">
+        
+        <ul>
+          <li><a href="#"class="text-red-600">Home</a></li>
+          <li><a href="#" class="text-red-600">Contact Us</a></li>
+          <li><a href="#" class="text-red-600">Terms & Conditions</a></li>
+          <li><a href="#" class="text-red-600">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="w-2/3">
+        <h3 class="text-2xl font-bold mb-4">ABOUT</h3>
+        <p>We're all in! Our line selections provide solutions in the major vertical markets, corporate, healthcare, and education. With the manufacturers in our portfolio, we can deliver furniture products that achieve a design vision and remain within budget and time parameters. Also, custom-made furniture options are available to fit the requirements of the project.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-red-500 p-4 mt-10">
+    <div class="container mx-auto text-center text-white">
+      © 2024 Workplace Answers
+    </div>
+  </footer>
+  <script src="/wp_answers/script.js"></script>
 </body>
 </html>
+
