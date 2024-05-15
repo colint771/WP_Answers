@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  header {
+    background: white;
+    color: grey;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+    margin-right: 20px; 
+  }
+  
+  nav ul li a {
+    color: grey;
+    text-decoration: none;
+
+  }
+  
+  main {
+    margin-top: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+
+  img.header-logo {
+    display: flex;
+    width: 25%;
+    height: auto;
+
+  }
+
+  /* Bottom section */
+
+  div ul li {
+    list-style: none;
+    margin-top: 0 1000px;
+    font-size: 1.5em;
+  }
+
+  div ul li a {
+    list-style: none;
+    background: white;
+    color: rgba(255, 72, 0, 0.853);
+    text-decoration: none;
+    
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    margin-right: 20px;
+  }
+  h3.about {
+    color: rgba(255, 72, 0, 0.853);
+  }
+
+  p.about {
+    flex-wrap: wrap;
+
+  }
+
+  /*Responsive CSS  */
+/* Mobile styles */
+@media (max-width: 600px) {
+    nav ul li {
+      display: block;
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    footer {
+      position: static;
+    }
+  }
+  
+  /* Tablet styles */
+  @media (min-width: 601px) and (max-width: 900px) {
+    body {
+      padding: 10px;
+    }
+  }
+
+  /* Home page carousel styling */
+  .carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-item.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    display: block;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .carousel-control-prev {
+    left: 10px;
+  }
+  
+  .carousel-control-next {
+    right: 10px;
+  }
+  
